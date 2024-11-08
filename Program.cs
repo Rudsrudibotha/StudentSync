@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using StudentSync.DataLayer;
+using StudentSync.PresentationLayer;
 
 namespace StudentSync
 {
     internal class Program
     {
-        enum Menu
-        {
-            
-        }
+        [STAThread]
         static void Main(string[] args)
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new PresentationLayer.MainMenu());
+            
         }
     }
 }
