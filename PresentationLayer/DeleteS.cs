@@ -15,7 +15,7 @@ namespace StudentSync.PresentationLayer
     public partial class DeleteS : Form
     {
         private List<Student> students = new List<Student>();
-        private string filePath = "StudentsFile.tx";
+        private string filePath = "StudentsFile.txt";
 
         public DeleteS()
         {
@@ -246,7 +246,7 @@ namespace StudentSync.PresentationLayer
         }
         private static void SaveToFile(Student student)
         {
-            string filepath = "StudentsFile.tx";
+            string filepath = "StudentsFile.txt";
             using (StreamWriter writer = new StreamWriter(filepath, true))
             {
                 writer.WriteLine(student.ToString());

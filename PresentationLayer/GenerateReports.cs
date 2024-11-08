@@ -15,7 +15,7 @@ namespace StudentSync.PresentationLayer
     public partial class GenerateReports : Form
     {
         private List<Student> students = new List<Student>();
-        private string studentsFilePath = "StudentsFile.tx";
+        private string studentsFilePath = "StudentsFile.txt";
         private string summaryFilePath = "Summary.txt";
 
 
@@ -23,7 +23,7 @@ namespace StudentSync.PresentationLayer
         {
             InitializeComponent();
             string binPath = AppDomain.CurrentDomain.BaseDirectory;
-            studentsFilePath = Path.Combine(binPath, "StudentsFile.tx");
+            studentsFilePath = Path.Combine(binPath, "StudentsFile.txt");
             summaryFilePath = Path.Combine(binPath, "Summary.txt");
             LoadStudents();
         }
@@ -137,6 +137,11 @@ namespace StudentSync.PresentationLayer
             {
                 throw new Exception($"Error saving summary to file: {ex.Message}");
             }
+        }
+
+        private void GenerateReports_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

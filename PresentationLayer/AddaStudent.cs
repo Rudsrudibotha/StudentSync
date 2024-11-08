@@ -77,7 +77,7 @@ namespace StudentSync.PresentationLayer
         }
         private static void SaveToFile(Student student)
         {
-            string filepath = "StudentsFile.tx";
+            string filepath = "StudentsFile.txt";
             using (StreamWriter writer = new StreamWriter(filepath, true))
             {
                 writer.WriteLine(student.ToString());
@@ -97,6 +97,11 @@ namespace StudentSync.PresentationLayer
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddaStudent_Load(object sender, EventArgs e)
         {
 
         }
