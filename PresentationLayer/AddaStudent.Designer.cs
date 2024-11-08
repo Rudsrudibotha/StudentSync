@@ -54,7 +54,7 @@
             this.button1.Location = new System.Drawing.Point(432, 332);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(356, 111);
+            this.button1.Size = new System.Drawing.Size(353, 111);
             this.button1.TabIndex = 0;
             this.button1.Text = "Main Menu";
             this.button1.UseVisualStyleBackColor = true;
@@ -231,6 +231,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1782, 902);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label7);
