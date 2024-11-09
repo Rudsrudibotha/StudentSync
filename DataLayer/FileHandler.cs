@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StudentSync.DataLayer
 {
-    //test
+    
     public class FileHandler
     {
         private static string _filePath = "StudentsFile.txt";
@@ -61,7 +61,7 @@ namespace StudentSync.DataLayer
                 throw new Exception($"Error loading students from file: {ex.Message}");
             }
         }
-        // Delete a student by ID from the file
+        
         public static void DeleteStudent(int studentId)
         {
             try
