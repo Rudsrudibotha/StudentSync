@@ -29,6 +29,8 @@ namespace StudentSync.PresentationLayer
 
             [DisplayName("Average Age")]
             public double AverageAge { get; set; }
+
+            //Importation of values
         }
     }
 }
