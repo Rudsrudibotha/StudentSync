@@ -127,7 +127,7 @@ namespace StudentSync.DataLayer
                         writer.WriteLine($"Total Students: {totalStudents}");
                         writer.WriteLine($"Average Age: {averageAge:F2}");
                     }
-                }// add
+                }
                 catch (Exception ex)
                 {
                     throw new Exception($"Error generating summary report: {ex.Message}");
