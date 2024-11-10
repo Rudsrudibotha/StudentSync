@@ -39,7 +39,7 @@ namespace StudentSync.DataLayer
 
                 string[] lines = File.ReadAllLines(_filePath);
                 Student[] students = new Student[lines.Length];
-
+                //Test
                 for (int i = 0; i < lines.Length; i++)
                 {
                     string[] studentData = lines[i].Split(',');
